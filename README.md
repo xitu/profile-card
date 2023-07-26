@@ -4,9 +4,9 @@
 
 ## Demo
 
+<div>
 <img src="https://4sdvg7tqbv.us.aircode.run/juejin?uid=712139263189303&hide_border=true" alt="月影的掘金数据" style="zoom:100%;" align="left"/>
-
-&nbsp;
+</div>
 
 ## How to Use
 
