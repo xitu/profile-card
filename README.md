@@ -30,3 +30,8 @@
 点击下面👇的按钮，将代码一键部署到你自己的项目。
 
 [![Deploy with AirCode](https://vercel.com/button)](https://aircode.io/dashboard?share_shareId=eh4pwat5qg&share_name=juejin%20user%20state&share_runtime=node/v16)
+
+## Credits
+
+- 感谢 [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) 项目，本项目灵感和许多代码出自此项目。
+- 感谢 [AirCode](https://aircode.io) 提供了专业的开发平台和部署服务，大大提升了项目开发和发布的效率。
