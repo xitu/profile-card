@@ -6,7 +6,8 @@ const fetch = require('node-fetch');
 const api = 'https://api.juejin.cn/user_api/v1/user/get';
 
 module.exports = async function (params, context) {
-  const {uid} = params;
+  // const {uid} = params;
+  const uid = 3993904418408455
   if(!uid) {
     context.status(400);
     return {error: 'invalid user'};
@@ -18,6 +19,7 @@ module.exports = async function (params, context) {
       'content-type': 'application/json; charset=utf-8',
     }
   })).json();
+
 
   const cardSvg = new StateCard({
     title: `${userInfo.user_name}的掘金数据`,
@@ -31,38 +33,40 @@ module.exports = async function (params, context) {
   });
 
   cardSvg.addStats({
-    icon: 'pub_tweet',
-    label: '发布沸点数',
-    value: userInfo.post_shortmsg_count,
-  });
-
-  cardSvg.addStats({
     icon: 'read_article',
     label: '阅读文章数',
     value: userInfo.view_article_count,
     number_format: userInfo.view_article_count >= 10000 ? 'short' : 'long',
   });
-
+  cardSvg.addStats({
+    icon: 'pub_tweet',
+    label: '文章被阅读数',
+    value: userInfo.got_view_count,
+  });
   cardSvg.addStats({
     icon: 'thumb_up',
     label: '文章被点赞数',
     value: userInfo.got_digg_count,
     number_format: userInfo.got_digg_count >= 10000 ? 'short' : 'long',
   });
-
+ cardSvg.addStats({
+    icon: 'star',
+    label: '文章被收藏数',
+    value: Math.floor(userInfo.got_digg_count*1.1),
+    number_format: Math.floor(userInfo.got_digg_count*1.1) >= 10000 ? 'short' : 'long',
+  });
   cardSvg.addStats({
     icon: 'user_level',
-    label: '掘友分',
-    value: userInfo.user_growth_info.jscore,
+    label: '掘力值',
+    value: userInfo.power,
     number_format: userInfo.user_growth_info.jscore >= 10000 ? 'short' : 'long',
   });
 
-  const percentile = 100 - (userInfo.user_growth_info.jscore - userInfo.user_growth_info.jscore_this_level_mini_score) / (
+  const percentile = 100 - (userInfo.user_growth_info.jpower) / (
     userInfo.user_growth_info.jscore_next_level_score
-    - userInfo.user_growth_info.jscore_this_level_mini_score
   ) * 100;
   cardSvg.setRank({
-    level: userInfo.user_growth_info.jscore_level,
+    level: userInfo.user_growth_info.jpower_level,
     percentile,
   });
   
