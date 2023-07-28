@@ -7,6 +7,7 @@
 <table>
   <tr>
     <td><img src="https://4sdvg7tqbv.us.aircode.run/juejin?uid=712139263189303&hide_border=true" alt="月影的掘金数据" style="zoom:100%;" align="left"/></td>
+    <td><img src="https://4sdvg7tqbv.us.aircode.run/juejin?uid=852876722177533&theme=algolia&hide_border=true" alt="优弧的掘金数据" style="zoom:100%;" align="left"/></td>
   </tr>
 </table>
 
