@@ -11,6 +11,18 @@
   </tr>
 </table>
 
+## How to Use
+
+```html
+<img src="https://4sdvg7tqbv.us.aircode.run/juejin?uid=712139263189303&hide_border=true" alt="月影的掘金数据" style="zoom:100%;" align="left"/>
+```
+
+你可以将URL作为img的src使用。
+
+在Github中，你可以创建你自己的[自定义profile](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)并将这个卡片用在你的profile的自定义Readme里。
+
+就像[我的profile](https://github.com/akira-cn)这样。
+
 ## Themes
 
 - [Default](https://4sdvg7tqbv.us.aircode.run/juejin?uid=712139263189303)
@@ -81,18 +93,6 @@
 - [rose](https://4sdvg7tqbv.us.aircode.run/juejin?uid=712139263189303&theme=rose)
 - [holi](https://4sdvg7tqbv.us.aircode.run/juejin?uid=712139263189303&theme=holi)
 - [neon](https://4sdvg7tqbv.us.aircode.run/juejin?uid=712139263189303&theme=neon)
-
-## How to Use
-
-```html
-<img src="https://4sdvg7tqbv.us.aircode.run/juejin?uid=712139263189303&hide_border=true" alt="月影的掘金数据" style="zoom:100%;" align="left"/>
-```
-
-你可以将URL作为img的src使用。
-
-在Github中，你可以创建你自己的[自定义profile](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)并将这个卡片用在你的profile的自定义Readme里。
-
-就像[我的profile](https://github.com/akira-cn)这样。
 
 ## One-Click Deploy
 
